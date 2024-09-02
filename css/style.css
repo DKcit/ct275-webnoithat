@@ -1,0 +1,523 @@
+a {
+  text-decoration: none;
+}
+
+.gachchanlogo {
+  text-decoration: none !important;
+}
+
+body {
+  font-family: raleway;
+}
+
+.ten {
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+  max-height: 48px;
+  max-width: 665px;
+}
+
+.chiase {
+  font-size: 25px;
+}
+
+.chiase img {
+  height: 25px;
+  width: 25px;
+  margin-left: 5px;
+}
+
+.gia {
+  color: #ee4d2d;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.noidung {
+  left: 10%;
+  right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px 20px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.left {
+  flex: 0 0 50%;
+  height: 100%;
+  text-align: center;
+}
+
+.detail_img {
+  width: 540px;
+}
+
+.right {
+  flex: 0 0 50%;
+  height: 100%;
+}
+
+/* Ẩn input checkbox */
+input[type="checkbox"] {
+  display: none;
+  cursor: pointer;
+}
+
+#heartCheckbox {
+  font-size: 30px;
+}
+
+/* Thiết lập trạng thái của trái tim */
+input[type="checkbox"]+label::before {
+  content: "\2764";
+  display: inline-block;
+  color: #ccc;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked+label::before {
+  color: red;
+}
+
+.chitiet {
+  background: rgba(0, 0, 0, .02);
+  color: rgba(0, 0, 0, .87);
+  font-size: 1.125rem;
+  font-weight: 400;
+
+  margin: 0;
+  padding: .875rem;
+  text-align: center;
+}
+
+.chitiet table {
+  color: rgba(0, 0, 0, .4);
+  font-size: .875rem;
+  padding-right: .75rem;
+  width: 8.75rem
+}
+
+.mota {
+  background: rgba(0, 0, 0, .02);
+  color: rgba(0, 0, 0, .87);
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin: 0;
+  padding: .875rem;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.nut {
+  align-items: center;
+  background: #fff;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, .8);
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  margin: 8px 8px 0 0;
+  min-height: 2.5rem;
+  min-width: 5rem;
+  outline: 0;
+  padding: .5rem;
+  word-break: break-word;
+  margin-bottom: 5px;
+}
+
+.nut:hover {
+  border-color: #6488d6;
+  color: #6488d6;
+  border: 1px solid #6488d6;
+}
+
+.nut.selected {
+  border-color: #6488d6;
+  color: #6488d6;
+  border: 1px solid #6488d6;
+}
+
+.nut1 {
+  align-items: center;
+  background: #fff;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, .8);
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  margin: 8px 8px 0 0;
+  min-height: 2.5rem;
+  min-width: 5rem;
+  outline: 0;
+  text-align: left;
+  word-break: break-word;
+}
+
+.nut1:hover {
+  border-color: #6488d6;
+  color: #6488d6;
+  border: 1px solid #6488d6;
+}
+
+.nut1.selected {
+  border-color: #6488d6;
+  color: #6488d6;
+  border: 1px solid #6488d6;
+}
+
+.chu {
+  color: #757575;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0;
+  width: 140px;
+}
+
+.chu1 {
+  margin-right: 12px;
+  display: block;
+  unicode-bidi: isolate;
+  align-items: center;
+  color: #555;
+  font-size: .875rem;
+}
+
+.quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+}
+
+.quantity-input {
+  text-align: center;
+  border: 0;
+  border-radius: 0;
+  box-sizing: border-box;
+  cursor: text;
+  font-size: 16px;
+  height: 32px;
+  width: 50px;
+  align-items: center;
+  background: transparent;
+  color: rgba(0, 0, 0, .8);
+  justify-content: center;
+  letter-spacing: 0;
+  line-height: 1;
+  outline: none;
+  border-left: 1px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  padding: 1px 6px;
+  align-items: center;
+  border-radius: 5px;
+  color: rgba(0, 0, 0, .8);
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  width: 32px;
+}
+
+.add-to-cart-btn {
+  background-color: #493C32;
+  outline: 0;
+  overflow: visible;
+  position: relative;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .03);
+  color: white;
+  max-width: 250px;
+  height: 48px;
+  padding: 0 20px;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid black;
+  cursor: pointer;
+
+}
+
+.add-to-cart-btn:hover {
+  background: #6488d6;
+  border: 1px solid black;
+  color: white;
+
+}
+
+.order {
+  background-color: #493C32;
+  outline: 0;
+  overflow: visible;
+  position: relative;
+  max-width: 250px;
+  color: #fff;
+  height: 48px;
+  padding: 0 20px;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .09);
+  cursor: pointer;
+  font-size: 14px;
+  justify-content: center;
+  text-transform: capitalize;
+}
+
+.order:hover {
+  background: #6488d6;
+  border: 1px solid black;
+  color: white;
+  max-width: 250px;
+}
+
+.stars {
+  display: inline-block;
+}
+
+.stars i {
+  color: gold;
+}
+
+.ndchitiet {
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, .4);
+  font-size: .875rem;
+  padding-right: .75rem;
+  width: 8.75rem;
+  cursor: pointer;
+}
+
+.ttchitiet {
+  display: block;
+  unicode-bidi: isolate;
+  font-size: .875rem;
+}
+
+.custom-table {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-collapse: collapse;
+  width: 90%;
+}
+
+.custom-table,
+.custom-table tr,
+.custom-table td {
+  border: 1px solid black;
+  padding: 8px;
+  /* Thêm padding để tạo khoảng cách giữa nội dung và đường viền */
+  text-align: center;
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  background-color: #eee4e0;
+}
+
+main .lon {
+  width: 1200px;
+  /* background-color: white; */
+  background-color: #eee4e0;
+}
+
+.chitiet1 {
+  display: flex;
+
+}
+
+.chitiet1 section {
+  padding: 20px 0 40px 0;
+}
+
+.trai {
+  width: 50%;
+  text-align: center;
+}
+
+.phai {
+  width: 50%;
+}
+
+/*Mobile width < 740px*/
+@media only screen and (max-width: 600px) {
+  .noidung {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .ten {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .ranking {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .gia {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .left img {
+    width: 300px;
+    height: auto;
+  }
+
+  .nut1 {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    width: 40px;
+    min-height: 15px;
+    min-width: 15px;
+  }
+
+  .nut {
+    padding: 0;
+    margin: 0;
+    margin-top: 5px;
+    font-size: 15px;
+    width: 40px;
+    min-height: 15px;
+    min-width: 15px;
+  }
+
+  .right {
+    width: 350px;
+  }
+
+  .chiase {
+    width: 90%;
+    font-size: 15px;
+  }
+
+  .chiase img {
+    height: auto;
+    width: 15px;
+  }
+
+  #heartCheckbox {
+    font-size: 15px;
+  }
+
+  .chitiet1 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .phai {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .phai ul {
+    padding-top: 20px;
+    width: 350px;
+  }
+
+  .size-btn {
+    font-size: 15px;
+  }
+
+  .trai {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .trai img {
+    padding-top: 20px;
+    width: 90%;
+  }
+
+  .add-to-cart-btn {
+    width: 130px;
+    margin-left: 35px;
+  }
+
+  .quantity {
+    margin-top: 10px;
+  }
+}
+
+/*Tablet width >= 740px and <1024*/
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+  .noidung {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .left img {
+    width: 500px;
+  }
+
+  .chitiet1 {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .chiase {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  .chiase img {
+    height: auto;
+    width: 30px;
+  }
+
+  #heartCheckbox {
+    font-size: 30px;
+  }
+
+  .phai {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .phai ul {
+    padding-top: 20px;
+  }
+
+  .trai {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .trai img {
+    padding-top: 20px;
+  }
+
+  .add-to-cart-btn {
+    width: 130px;
+  }
+
+  .quantity {
+    margin-top: 10px;
+  }
+}

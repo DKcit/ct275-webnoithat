@@ -1,0 +1,237 @@
+.wrapper-form-container {
+  position: relative;
+}
+
+.container-signup {
+	position: relative;
+	z-index: 5;
+}
+
+.modal-sign-up--hidden {
+	display: none;
+}
+
+.sign-up--disappear {
+	animation: signUpDisappear 0.5s ease;
+}
+
+@keyframes signUpDisappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.exit-sign-up-icon {
+  position: absolute;
+  right: 27px;
+  top: 6px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.form-container{
+  background-color: #fff;
+  font-size: 0;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px -15px rgba(0, 0, 0, 0.3);
+  background-image: url('../img/sign_up.png');
+  background-position: right top;
+  background-size: cover;
+}
+.form-container .title{
+  color: #000;
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: capitalize;
+  margin: 0 0 25px;
+}
+.form-container .title:after{
+  content: '';
+  background-color: #008080;
+  height: 3px;
+  width: 60px;
+  margin: 10px 0 0;
+  display: block;
+  clear: both;
+}
+
+.form-container .form-horizontal{ font-size: 0; }
+.form-container .form-horizontal .form-group{
+  color: #333;
+  width: 50%;
+  padding: 0 8px;
+  margin: 0 0 15px;
+  display: inline-block;
+}
+
+.form-container .form-horizontal .form-group.invalid{
+  margin: 0;
+}
+
+.form-container .form-horizontal .form-group:nth-child(4){ margin-bottom: 30px; }
+.form-container .form-horizontal .form-group label{
+  font-size: 17px;
+  font-weight: 700;
+}
+.form-container .form-horizontal .form-control{
+  color: #000;
+  background-color: transparent;
+  font-weight: 400;
+  letter-spacing: 1px;
+  height: 40px;
+  padding: 6px 12px;
+  border-radius: 10px;
+  border: 2px solid #e7e7e7;
+  box-shadow: none;
+}
+.form-container .form-horizontal .form-control:focus{ box-shadow: 0 0 5px #dcdcdc; }
+
+
+.form-container .form-horizontal .checkbox{
+  height: 17px;
+  width: 17px;
+  min-height: auto;
+  margin: 2px 8px 0 0;
+  border: 2px solid #d9d9d9;
+  border-radius: 2px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  transition: all 0.3s ease 0s;
+}
+.form-container .form-horizontal .checkbox:before{
+  content: '';
+  height: 5px;
+  width: 9px;
+  border-bottom: 2px solid #00A9EF;
+  border-left: 2px solid #00A9EF;
+  transform: rotate(-45deg);
+  position: absolute;
+  left: 2px;
+  top: 2.5px;
+  transition: all 0.3s ease;
+}
+
+.form-container .signin-link{
+  color: #333;
+  font-size: 14px;
+  width: calc(100% - 190px);
+  margin-right: 30px;
+  display: inline-block;
+  vertical-align: top;
+}
+.form-container .signin-link a{
+  color: #00A9EF;
+  font-weight: 600;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  cursor: pointer;
+}
+.form-container .signin-link a:hover{ 
+  opacity: 0.8;
+  color: #0050ef;
+}
+.form-container .form-horizontal .signup{
+  color: #fff;
+  background: #008080;
+  font-size: 15px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 160px;
+  padding: 8px 15px 9px;
+  border-radius: 10px;
+  transition: all 0.3s ease 0s;
+}
+.form-container .form-horizontal .btn:hover,
+.form-container .form-horizontal .btn:focus{
+  text-shadow: 0 0 5px rgba(0,0,0,0.5);
+  box-shadow: 3px 3px rgba(0,0,0,0.15),5px 5px rgba(0,0,0,0.1);
+  outline: none;
+}
+
+.wrapper-signup {
+  height: 100vh;
+}
+
+.form-container .signin-link {
+  width: 100%;
+  display: block;
+}
+
+.form-footer {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.suggest-signin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#city {
+  font-size: 15px;
+}
+
+.group-2 {
+  display: flex;
+}
+
+.form-phone {
+  font-family: sans-serif;
+}
+
+.btn.signup {
+  color: red;
+}
+
+.form-control::-webkit-input-placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  line-height: 0;
+}
+
+.form-group.invalid .form-control {
+  border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+  color: #f33a58;
+}
+
+.form-message {
+  font-size: 12px;
+  padding: 4px 0 0;
+}
+
+@media screen and (max-width: 546px) {
+  .form-container {
+    background-image: none;
+  }
+
+  .form-container .form-horizontal .form-group{
+    width: 100%;
+    display: block;
+  }
+  
+  .form-container .form-horizontal .signup {
+    width: 126px;
+  }
+
+  .group-2 {
+    display: block;
+  }
+
+  .form-container {
+    background-position: center;
+  }
+}

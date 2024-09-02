@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head style="background-color: #eee4e0;">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên hệ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/stylekhuyemai.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="css/lienhe.css">
+
+</head>
+
+<body>
+    <div class="container-fluid container-fluid-wrapper">
+        <header class="container p-1 custom-bg-color">
+            <div class="text-center">
+                <img src="img/logo.png">
+            </div>
+    
+            <div class="navbar navbar-expand-xl">
+                <div class="header__main-content">
+                        <div class="header__navbar-toggler">
+                            <button style="margin-left: -23px;" class="navbar-toggler" type="button">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+    
+                            <div class="header__links-wrapper header__links--hidden">
+                                <div class="header__links" id="navbarNav">
+                                        <a href="trangchu.html">Trang chủ</a>
+                                
+                                        <div class="product-link">
+                                            <a class="nav-link dropdown-toggle product-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Sản phẩm
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">Nam</a></li>
+                                                <li><a class="dropdown-item" href="#">Nữ</a></li>
+                                                <li><a class="dropdown-item" href="sanphampage1.html">Bộ sưu tập</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <a href="khuyenmai.html">Khuyến mãi</a>
+                                
+                                        <a href="cskh.html">Chăm sóc khách hàng</a>
+                                
+                                        <a href="lienhe.html">Liên hệ</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="header__login-user">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-login">
+                                        <i class="fas fa-user-circle fa-lg"></i> 
+                                        <span class="nav-link-login-username">Login</span>
+                    
+                                        <ul class="list-info-login">
+                                            <li class="logout">
+                                                Đăng xuất
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="header_links_main_content">
+                            <div class="header__links">
+                                <a href="trangchu.html">Trang chủ</a>
+                            
+                                <div class="product-link">
+                                    <a class="nav-link dropdown-toggle product-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sản phẩm
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Nam</a></li>
+                                        <li><a class="dropdown-item" href="#">Nữ</a></li>
+                                        <li><a class="dropdown-item" href="sanphampage1.html">Bộ sưu tập</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <a href="khuyenmai.html">Khuyến mãi</a>
+                            
+                                <a class="take_care" href="cskh.html">Chăm sóc khách hàng</a>
+                                <a class="take_care--tablet" href="cskh.html">CSKH</a>
+                            
+                                <a href="lienhe.html">Liên hệ</a>
+                            </div>
+                        </div class="header_links_main_content">
+                    
+                        <div class="header__search-and-cart">
+                            <div class="search-container">
+                                <input type="text" placeholder="Tìm kiếm...">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                                
+                            <div class="nav-link cart-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="30px" height="30px" viewBox="5.7 0 105.5 126.1" preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-1">
+                                    <path fill="#a6858d" d="M99.8 28.4c0-1.2-0.9-2-2.1-2h-15c0 3.2 0 7.6 0 8.2 0 1.5-1.2 2.6-2.6 2.9 -1.5 0.3-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.9 0-4.7 0-8.2H40.1c0 3.2 0 7.3 0 8.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.6 0-5 0-8.2h-15c-1.2 0-2 0.9-2 2L8.3 124c0 1.2 0.9 2.1 2.1 2.1h96.3c1.2 0 2.1-0.9 2.1-2.1L99.8 28.4z"></path>
+                                    <path fill="#a6858d" d="M59.1 5.9c-2.9 0-2 0-2.9 0 -2 0-4.4 0.6-6.4 1.5 -3.2 1.5-5.9 4.1-7.6 7.3 -0.9 1.8-1.5 3.5-1.8 5.6 0 0.9-0.3 1.5-0.3 2.3 0 1.2 0 2.1 0 3.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-1.2 0-2.3 0-3.5 0-3.2 0.9-6.4 2-9.4 1.2-2.3 2.6-4.7 4.7-6.4 3.2-2.9 6.7-5 11.1-5.9C53.5 0.3 55 0 56.7 0c1.5 0 2.9 0 4.4 0 2.9 0 5.6 0.6 7.9 1.8 2.6 1.2 5 2.6 6.7 4.4 3.2 3.2 5.3 6.7 6.4 11.1 0.3 1.5 0.6 3.2 0.6 4.7 0 1.2 0 2.3 0 3.2 0 1.5-1.2 2.6-2.6 2.9s-2.9-0.9-3.2-2.3c0-0.3 0-0.3 0-0.6 0-1.2 0-2.6 0-3.8 0-2.3-0.6-4.4-1.8-6.4 -1.5-3.2-4.1-5.9-7.3-7.3 -1.8-0.9-3.5-1.8-5.9-1.8C61.1 5.9 59.1 5.9 59.1 5.9L59.1 5.9z"></path>
+                                    <text fill="#fff" x="58.5" y="77" dy=".35em" text-anchor="middle" class="uxskpx heavy" data-hook="items-count">0</text>
+                                </svg>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </header>
+        <!-- Cart-modal -->
+        <div class="modal modal-cart--hidden">
+            <div class="modal__overlay"></div>
+    
+            <div class="modal__body">
+                <div class="cart">
+                    <div class="cart__heading">
+                        <div class="cart__heading-arrow" title="Đóng giỏ hàng">
+                            <i class="fa-solid fa-angle-right cart__heading-icon"></i>
+                        </div>
+        
+                        <span class="cart__heading-title">Giỏ Hàng</span>
+                    </div>
+        
+                    <div class="cart__content">
+                        <ul class="cart__list-product"></ul>
+        
+                        <div class="cart__sub-total">
+                            <div class="cart__sub-total-title">Tổng tiền</div>
+                            <div class="cart__sub-total-number">0</div>
+                        </div>
+                        
+                        <div class="cart-empty-img cart-empty-img--hidden">
+                            <img src="img/Cart_empty.png" >
+                        </div>
+                        
+                    </div>
+        
+                    <div class="cart__footer">
+                        <a href="detail_cart.html" class="cart__footer-link-btn">
+                            <button class="cart__footer-btn">Xem giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Sign-up-modal -->
+        <div class="modal modal-sign-up--hidden">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <div class="container container-signup">
+                    <div class="row d-flex justify-content-center align-items-center wrapper-signup">
+                        <div class="col-lg-7 wrapper-form-container">
+                            <div class="exit-sign-up-icon">
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+    
+                            <div class="form-container">
+                                <h3 class="title">ĐĂNG KÝ</h3>
+                                <form class="form-horizontal" id="form-1" method="POST" novalidate>
+                                    <div class="group-2">
+                                        <div class="form-group">
+                                            <label>*Tên đăng nhập</label>
+                                            <input id="username" name="username" type="text" class="form-control" placeholder="Nhập tên đăng nhập">
+                                            <span class="form-message"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input id="email" name="email" type="email" class="form-control" placeholder="Nhập email">
+                                            <span class="form-message"></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="group-2">
+                                        <div class="form-group">
+                                            <label>*Mật khẩu</label>
+                                            <input id="password" name="password"  type="password" class="form-control" placeholder="Nhập mật khẩu">
+                                            <span class="form-message"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>*Nhập lại mật khẩu</label>
+                                            <input id="password_confirm" name="password_confirm" type="password" class="form-control" placeholder="Nhập lại mật khẩu">
+                                            <span class="form-message"></span>
+                                        </div>
+                                    </div>
+                
+                                    <div class="group-2">
+                                        <div class="form-group form-group-number-phone">
+                                            <label>*Số điện thoại</label>
+                                            <input id="number_phone" name="number_phone" type="text" class="form-control" placeholder="Nhập số điện thoại">
+                                            <span class="form-message"></span>
+                                        </div>
+                                        
+                                        <div class="form-group form-group-city">
+                                            <label>*Thành phố</label>
+                                            <div>
+                                                <select class="form-select form-select-sm form-control" id="city" name="code_city" aria-label=".form-select-sm">
+                                                    <option value="" selected id="default-city">Chọn tỉnh thành</option>           
+                                                </select>
+                                                <span class="form-message"></span>
+                                            </div> 
+                                        </div>
+                                    </div>
+                
+                                    <div class="form-footer">
+                                        <div class="suggest-signin">    
+                                            <div class="signin-link">Bạn đã có tài khoản?</div>
+                                            <div class="signin-link"> Nhấn vào đây để <a>Đăng nhập</a></div>
+                                        </div>
+                    
+                                        <button class="btn signup">ĐĂNG KÝ</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    
+        <!-- Login-modal -->
+        <div class="modal modal-login--hidden">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <div class="wrapper-login">
+                    <div class="container-fluid container-login">
+                        <div class="row main-content text-center login">
+                            <div class="col-lg-4 text-center shop__info">
+                                <img src="img/login.jpg" alt="" class="login-img">
+                            </div>
+                            <div class="col-lg-8 login__form">
+                                <div class="container-fluid">
+                                    <div class="row mt-3">
+                                        <div class="control-login">
+                                            <h2 class="login-title">ĐĂNG NHẬP</h2>
+                                            <div class="exit-login-icon">
+                                                <i class="fa-solid fa-x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <form id="form-2" method="POST" novalidate>
+                                            <div class="input-user-name form-group">
+                                                <input type="text" name="username" id="username-login" class="form__input" placeholder="Tên đăng nhập">
+                                                <span class="form-message-login"></span>
+                                            </div>
+                
+                                            <div class="input-password form-group">
+                                                <input type="password" name="password" id="password-login" class="form__input" placeholder="Mật khẩu">
+                                                <span class="form-message-login"></span>
+                                            </div>
+                
+                                            <div class="login-btn">
+                                                <input type="submit" value="Đăng nhập" class="btn-submit-login">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="row">
+                                        <p>Bạn chưa có tài khoản? <a class="link-singup">Đăng ký</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    <!-- Tiêu đề ở giữa -->
+    <div class="container-fluid" style="background-color: #eee4e0; padding-bottom: 20px; margin-top: 30px;">
+        <h1 class="container" style="font-family: 'Inter'; text-align: center; margin-top: -30px;">Liên hệ</h1>
+        <div class="container" style="background-color: #eee4e0;">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-4 sidenav" style="margin-top: 60px;">
+                    <form action="#" class="contact-form" id="myForm">
+                        <div class="row">
+                            <p>GỬI TIN NHẮN CHO UNI</p>
+                            <p style="margin-top: -20px;">Khi bạn cần sự hỗ trợ, chúng tôi sẽ hỗ trợ.</p>
+                        </div>
+                        <div id="row1" class="row" style="max-width: 250px;">
+                            <label for="fname"></label>
+                            <input type="text" class="form-control" id="fname" name="fname"
+                                placeholder="Nhập họ và tên">
+                        </div>
+                        <small id="tenError" class="error-message"></small>
+                        <div id="row2" class="row" style="max-width: 250px;">
+                            <label for="email"></label>
+                            <input type="email" class="form-control" id="email_contact" name="email" placeholder="Nhập email">
+                        </div>
+                        <small id="emailError" class="error-message">vd:uni@gmail.com</small>
+                        <div id="row3" class="row" style="max-width: 250px;">
+                            <label for="dienthoai"></label>
+                            <input type="tel" class="form-control" id="dienthoai" name="dienthoai"
+                                placeholder="Nhập số điện thoại" pattern="[0-9]{10}">
+                        </div>
+                        <small id="dienthoaiError" class="error-message">vd: 0946001230</small>
+                        <div id="row4" class="row" style="max-width: 450px; border-radius: 7px;">
+                            <textarea id="noidung" class="form-control" name="noidung"
+                                placeholder="Nhập nội dung"></textarea>
+                        </div>
+                        <small id="noidungError" class="error-message"></small>
+                        <div id="gui" style="padding: 10px;">
+                            <button style=" font-size: 19px;"> Gửi</button>
+                        </div>
+                    </form>
+                    <div class="container contact-info">
+                        <div class="row" style="text-align: left; margin-left: -25px;">
+                            <h3>THÔNG TIN LIÊN HỆ</h3>
+                            <p style="text-align: left; ">Hotline: <strong>0123 003 006</strong><a id="a1" href="#"
+                                    class="contact-button"
+                                    style="padding: 5px 0px; width: 100px; ">Gọi ngay</a></p>
+                            <p style="text-align: left;  margin-top: -10px;">Email:
+                                <strong>unilshop@gmail.com</strong><a id="a2" href="#" class="contact-button"
+                                    style="padding: 5px 0px; width: 100px; ">Gửi ngay</a>
+                            </p>
+                            <p style="text-align: left;  margin-top: -10px;">Chatbot: <strong>Messenger</strong><a
+                                    id="a3" href="#" class="contact-button"
+                                    style="padding: 5px 0px; width: 100px; ">Chat ngay</a>
+                            </p>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <img id="img1" src="./img/lienhe.png" alt="Liên hệ UNI" class="img-center img-rounded">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-md-start text-sm-start text-start">
+                    <h3>VỀ CHÚNG TÔI</h3>
+                    <a href="#" class="click-here brand">UNI</a>
+                    <br>
+                    <p>Đừng lo lắng, chúng tôi là Uni</p>
+                </div>
+
+                <div class="col-md-4 text-md-center text-sm-start text-start footer_contact">
+                    <h3>LIÊN HỆ</h3>
+                    <p>Điện thoại: <span class="number-phone">0123 003 006</span></p>
+                    <p>Chăm sóc khách hàng: unilshop@gmail.com</p>
+                    <p>Liên hệ công việc: business@unil.vn</p>
+                </div>
+
+                <div class="col-md-4 footer_support text-md-start text-sm-start text-start">
+                    <div class="footer_support_child">
+                        <h3>HỖ TRỢ</h3>
+                        <p>Tài Khoản: <a href="#" class="click-here">https://unil.vn/</a></p>
+                        <p href="#">Chính sách đổi trả <a href="#" class="click-here">Tại đây</a></p>
+                        <p href="#">Chính sách bảo mật <a href="#" class="click-here">Tại đây</a></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>© Bản quyền thuộc về UNI</p>
+            </div>
+        </div>
+  </footer>
+
+
+  <script src="js/header.js"></script>
+  <script src="js/database.js"></script>
+  <script src="js/form_validator.js"></script>
+  <script src="js/singup.js"></script>
+  <script src="js/login.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+
+</html>

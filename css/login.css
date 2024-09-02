@@ -1,0 +1,172 @@
+.wrapper-login {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.container-login {
+	position: relative;
+	z-index: 2;
+}
+
+.modal-login--hidden {
+	display: none;
+}
+
+.login--appear {
+	animation: loginAppear 0.5s ease-in;
+}
+
+.login--disappear {
+	animation: loginDisappear 0.5s ease;
+}
+
+@keyframes loginAppear {
+    0% {
+        transform: scale(0.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes loginDisappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.main-content{
+	width: 48%;
+	border-radius: 20px;
+	box-shadow: 0 5px 5px rgba(0,0,0,.4);
+	margin: 0 auto;
+	display: flex;
+	background-color: #008080;
+}
+
+.shop__info{
+	background-color: #008080;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+
+.shop__info img {
+	flex-grow: 1;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	object-fit: cover;
+}
+
+.row > h2{
+	color:#008080;
+}
+.login__form{
+	background-color: #fff;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	border-top:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+form{
+	padding: 0 32px;
+}
+.form__input{
+	width: 100%;
+	border:0px solid transparent;
+	border-radius: 0;
+	border-bottom: 1px solid #aaa;
+	padding: 16px 8px 8px;
+	padding-left: 32px;
+	outline:none;
+	margin: 24px auto;
+	transition: all .5s ease;
+}
+.form__input:focus{
+	border-bottom-color: #008080;
+	box-shadow: 0 0 5px rgba(0,80,80,.4); 
+	border-radius: 4px;
+}
+.btn-submit-login{
+	transition: all .5s ease;
+	width: 70%;
+	border-radius: 30px;
+	color:#008080;
+	font-weight: 600;
+	background-color: #fff;
+	border: 1px solid #008080;
+	margin-top: 24px;
+	margin-bottom: 16px;
+}
+.btn-submit-login:hover, .btn-submit-login:focus{
+	background-color: #008080;
+	color:#fff;
+}
+
+.login-title {
+	font-weight: 700;
+	font-size: 32px;
+}
+
+.login-btn .btn-submit-login{
+	font-weight: 700;
+	font-size: 18px;
+}
+
+.form-group {
+	position:relative;
+}
+
+.form-group.invalid .form-control {
+	border-color: #f33a58;
+}
+  
+.form-group.invalid .form-message-login {
+	color: #f33a58;
+}
+  
+.form-message-login {
+	font-size: 16px;
+	padding: 4px 0 0;
+	position: absolute;
+	left: 32px;
+	bottom: -6px;
+}
+
+.control-login {
+	position: relative;
+}
+
+.exit-login-icon {
+	position: absolute;
+    top: -10px;
+    right: 0;
+    font-size: 20px;
+	cursor: pointer;
+}
+
+.link-singup {
+	cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+	.main-content{
+		width: 60%;
+		box-shadow: none;
+		background-color: transparent;
+	}
+	.shop__info{
+		display: none;
+	}
+	.login__form{
+		border-top-left-radius:20px;
+		border-bottom-left-radius:20px;
+	}
+}

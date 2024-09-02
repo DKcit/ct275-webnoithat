@@ -1,0 +1,50 @@
+/* CSS cho lớp overlay */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu đen với độ trong suốt */
+    z-index: 999; /* Đảm bảo lớp overlay ở trên cùng */
+}
+
+/* CSS cho danh sách kết quả tìm kiếm */
+#searchResults {
+    display: none;
+    position: absolute;
+    top: 50px; /* Đặt vị trí ban đầu cho danh sách tìm kiếm */
+    left: 0;
+    width: 125%;
+    background-color: white;
+    border: 1px solid #ccc;
+    text-align: end;
+    z-index: 1000; /* Đảm bảo danh sách tìm kiếm ở trên cùng */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Hiển thị bóng đổ */
+    transition: opacity 0.3s, transform 0.3s; /* Hiệu ứng hiển thị và ẩn */
+}
+#searchResults li {
+    border-bottom: 1px solid #ccc; /* Đường kẻ phân biệt giữa các sản phẩm */
+    padding: 10px 0; /* Để tạo khoảng cách giữa các sản phẩm */
+    font-size: 10px;
+    position: relative;
+    height: 50px;
+    text-align: end;
+    transition: background-color 0.3s ease;
+
+}
+#searchResults li p {
+    padding-left: 10px;
+}
+
+#searchResults li img {
+    position: absolute;
+    top: 80%;
+    transform: translateY(-19%);
+    left: 0;
+    margin-left: 1px;
+}
+#searchResults li:hover {
+    background-color: #888888;
+}

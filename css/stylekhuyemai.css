@@ -1,0 +1,58 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eee4e0;
+    max-width: 900px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.product {
+    border: 15px;
+    text-align: center;
+    flex: 1;
+    background-color: #eee4e0;
+    width: 200px;
+    height: 320px;
+}
+.product img {
+    width: 175px;
+}
+
+.baoquanh {
+    display: flex;
+    justify-content: center;
+    background-color: #eee4e0;
+}
+.title_sale { 
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 80px;
+    background-color: #eee4e0;
+    padding-top: 40px;
+}
+.tensp {
+    justify-content: center;
+    margin: 5px 0 10px 0;
+    height: 40px;
+    font-size: 18px; 
+    line-height: 20px;	
+    text-align: center;
+    padding-bottom: 60px;
+}	
+.giasp {	
+    font-size: 20px; 
+    line-height: 18px; 
+    color: #d0011b;
+}
+.hang {
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px 0 10px 0; 
+}
+.link{
+    display: block;
+    text-decoration: none;
+    color: #111;
+    z-index: 0;
+}

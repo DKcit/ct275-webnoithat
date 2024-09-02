@@ -1,0 +1,92 @@
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eee4e0;
+    max-width: 900px;
+    justify-content: center;
+}
+.product {
+    border: 15px;
+    text-align: center;
+    flex: 1;
+    background-color: #eee4e0;
+    width: 200px;
+    height: 320px;
+}
+.product img {
+    width: 175px;
+    height: 175px;
+}
+
+.baoquanh {
+    display: flex;
+    justify-content: center;
+    background-color: #eee4e0;
+}
+.title_bosuutap { 
+    color: black;
+    margin: 12px 0 16px;		
+    font-size: 28px; 	 
+    line-height: 34px;	 
+    text-align:center;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+.tensp {
+    justify-content: center;
+    margin: 5px 0 10px 0;
+    height: 60px;
+    font-size: 18px; 
+    line-height: 20px;	
+    text-align: center;
+}	
+.giasp {	
+    font-size: 20px; 
+    line-height: 18px; 
+}
+.hang {
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px 0 10px 0; 
+}
+.next-page a {
+    font-family: raleway;
+    border-radius: 5px;
+    background-color: #fff;
+    margin: 5px;
+    padding: 10px;
+    text-decoration: none;
+    border: solid 0.05px #493C32;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.next-page a:hover {
+background-color: #6488d6;
+}
+.next-page .chuyentrang{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.next-page .chuyentrang:hover {
+    color: black;
+}
+.test #my-button{
+    border-radius: 5px;
+    background-color: #fff;
+    height: 40px;
+    width: 40px;
+    margin: 5px 5px;
+    padding: 10px;
+    border: solid 0.5px #493C32;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+}
+.test #my-button:hover {
+background-color: #6488d6;
+}
