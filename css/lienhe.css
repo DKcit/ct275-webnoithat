@@ -1,0 +1,345 @@
+.container-fluid {
+    width: 1320px;
+
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: -20px;
+    white-space: normal;
+    display: block;
+}
+
+.error-message-visible {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: -25px;
+}
+
+
+
+
+head {
+    background-color: #eee4e0;
+}
+
+.container-fluid.wrapeer-header {
+    margin-bottom: 0;
+}
+
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.container-fluid h1 {
+    margin-top: 0;
+}
+
+
+
+
+.centered {
+    text-align: center;
+    font-family: 'Inter';
+    margin-top: 0px;
+    margin-bottom: -1px;
+    background-color: #eee4e0;
+}
+
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-rounded {
+    border-radius: 10px;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.col-lg-5 {
+    margin-top: 0;
+}
+
+
+.col-lg-5,
+.col-md-6,
+.col-12 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#row1,
+#row2,
+#row3 {
+    border: none;
+    border-bottom: 2px solid #bababa;
+}
+
+#row4 {
+    margin-top: 10px;
+    border-bottom: 2px solid #bababa;
+    border-top: 2px solid #bababa;
+    border-left: 2px solid #bababa;
+    border-right: 2px solid #bababa;
+    border-radius: 2px;
+}
+
+#gui {
+    margin-left: -20px;
+}
+
+
+
+
+
+h2 {
+    font-family: 'Inter';
+}
+
+
+
+button,
+.custom-button,
+a.custom-button {
+    background-color: #6e5a51;
+    border: 3px solid #6e5a51;
+    color: #ffffff;
+    cursor: pointer;
+    outline: none;
+}
+
+.contact-button {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact-info {
+    margin-left: auto;
+    margin-top: auto;
+}
+
+
+#a1 {
+    display: inline-block;
+    margin-left: 87px;
+    padding: 5px 10px;
+    text-align: center;
+}
+
+#a2 {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+
+#a3 {
+    display: inline-block;
+    margin-left: 95px;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+
+
+.contact-form .form-control {
+    border: none;
+    background-color: #eee4e0;
+    margin-top: 0px;
+}
+
+.contact-form {
+    border: none;
+}
+
+.form-control:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+}
+
+.form-control:hover {
+    border-color: #ced4da;
+}
+
+
+
+
+/* Khoảng cách giữa các trường trong form */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.btn-contact {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+
+/* Định dạng cho nút "Gửi" */
+
+
+button:active {
+    box-shadow: 0 0 9e9q inset #0009;
+    background-color: var(--c);
+    color: #fff;
+}
+
+.sidenav p {
+    margin-bottom: 20px;
+}
+
+.sidenav strong {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sidenav a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #6e5a51;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid #000;
+}
+
+.sidenav a:hover {
+    background-color: #222;
+    color: #fff;
+}
+
+#img1 {
+    border-radius: 50px;
+    width: 500px;
+    height: 600px;
+    margin-top: 0px;
+    text-align: right;
+}
+#noidungError{
+    margin-left: 450px;
+}
+
+@media only screen and (max-width: 46.1875em) {
+    #tenError{
+        margin-left: 150px;
+    }
+    #fname{
+        margin-left: 150px;
+    }
+    #emailError{
+        margin-left: 150px;
+    }
+    #dienthoaiError{
+        margin-left: 175px;
+
+    }
+    #noidungError{
+        margin-left: 240px;
+        margin-top: -50px;
+    }
+    #a1 {
+        display: block;
+        margin-left: 30px;
+    }
+
+    #a2 {
+        display: block;
+        margin-right: 0;
+    }
+
+    #a3 {
+        display: block;
+        margin-left: 30px;
+    }
+
+    #img1 {
+        width: 350px;
+        height: 380px;
+    }
+    #row1{
+        margin-left: -162px;
+        width: 150px;
+    }    
+    #row2{
+        width: 150px;
+    }    
+    #row3{
+        width: 180px;
+    }    
+    #row4{
+        width: 250px;
+    }    
+}
+
+@media only screen and (min-width: 46.25em) and (max-width: 64em) {
+    #tenError{
+        margin-left: 150px;
+    }
+    #fname{
+        margin-left: 150px;
+    }
+    #emailError{
+        margin-left: 150px;
+    }
+    #dienthoaiError{
+        margin-left: 175px;
+
+    }
+    #noidungError{
+        margin-left: 250px;
+    }
+    #a1 {
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #a2 {
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #a3 {
+        display: block;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    #img1 {
+        width: 250px;
+        height: 500px;
+        margin-left: 260px;
+        margin-top: -130px;
+    }
+    #row1{
+        margin-left: -162px;
+        width: 150px;
+    }
+    #row2{
+        width: 150px;    }
+    #row3{
+        width: 180px;    }
+    #row4{
+        width: 250px;    }
+}

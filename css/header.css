@@ -1,0 +1,382 @@
+/* Các mục trong danh sách liên kết */
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.wrapeer-header {
+    background-color: #eee4e0;
+    padding-bottom: 40px;
+}
+
+header {
+    background-color: #eee4e0;
+    padding: 10px;
+    /* Giảm khoảng cách bên trong của header */
+    width: 100%;
+    border-bottom: 1px solid #6e5a51;
+}
+
+
+/* Khoảng cách của logo */
+
+header img {
+    width: 250px;
+    /* Điều chỉnh chiều rộng của logo */
+    height: 250px;
+    /* Điều chỉnh chiều cao của logo */
+    margin: -10px;
+}
+
+nav ul div {
+    margin-right: 0;
+    /* Khoảng cách giữa các tab */
+}
+
+
+/* Xử lý trường hợp tab cuối cùng */
+
+nav ul li:last-child {
+    margin-right: 0;
+    /* Loại bỏ khoảng cách bên phải của tab cuối cùng */
+}
+
+
+/* Liên kết trong danh sách */
+
+nav ul li a {
+    margin-top: 0px;
+    /* Khoảng cách phía trên của thẻ nav */
+    margin-bottom: 0px;
+    color: #383838;
+    /* Màu chữ của các tab */
+    text-decoration: none;
+    /* Loại bỏ gạch chân dưới */
+    font-size: 15px;
+    /* Đổi cỡ chữ từ 18px thành 15px */
+}
+
+
+/* Biểu tượng giỏ hàng */
+
+.cart-icon {
+    margin-right: 10px;
+    /* Khoảng cách giữa các tab */
+}
+
+.cart-icon li a {
+    color: #000000;
+    /* Màu sắc của biểu tượng */
+    text-decoration: none;
+}
+
+.cart-icon .fa-shopping-cart {
+    font-size: 30px;
+    /* Kích thước của biểu tượng Giỏ hàng */
+    color: #000000;
+    /* Màu của biểu tượng Giỏ hàng */
+}
+
+
+/* Phần thanh tìm kiếm */
+
+.search-container {
+    position: relative;
+}
+
+.search-container input[type="text"] {
+    padding: 4px 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.custom-bg-color {
+    background-color: #eee4e0;
+}
+
+.search-container button[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 4px 10px;
+    border: #000000;
+    /* Thiếu kiểu border */
+    background-color: #6488d6;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* doi mau khi cham vao icon tk*/
+
+.search-container button[type="submit"]:hover {
+    background-color: #2d519e;
+    color: #fff;
+}
+
+
+/* Định dạng viền dưới cho thẻ nav */
+
+nav {
+    /* Định dạng viền dưới cho thẻ nav */
+    margin-top: -80px;
+}
+
+
+/* Trùng lặp phần CSS trước */
+
+nav ul {
+    list-style-type: none;
+    /* Loại bỏ dấu hiệu liệt kê */
+    margin: 0;
+    /* Xóa khoảng cách ở ngoài */
+    padding: 0;
+    /* Xóa khoảng cách bên trong */
+    display: flex;
+    /* Sử dụng flexbox để căn chỉnh các phần tử con */
+}
+
+nav ul li {
+    margin-right: 10px;
+    /* Khoảng cách giữa các tab */
+}
+
+.cart-icon {
+    margin-right: 10px;
+    /* Đặt lại khoảng cách của tab Giỏ hàng */
+}
+
+.cart-icon a {
+    color: #000000;
+    /* Màu sắc của biểu tượng */
+    text-decoration: none;
+}
+
+.cart-icon .fa-shopping-cart {
+    font-size: 24px;
+    /* Kích thước của biểu tượng Giỏ hàng */
+    color: #000000;
+    /* Màu của biểu tượng Giỏ hàng */
+}
+
+
+/* Phần hiệu ứng nổi bật cho tab active */
+
+nav ul li a.active {
+    color: #636363;
+    /* Thay đổi màu chữ của tab nổi bật */
+    background-color: none;
+    /* Thay đổi màu nền xung quanh tab nổi bật */
+    border-radius: 5px;
+    /* Kích thước viền cong để tạo hiệu ứng nổi bật */
+    padding: 5px 10px;
+    /* Kích thước lề để tạo hiệu ứng nổi bật */
+}
+
+
+/* Dropdown menu */
+
+.dropdown-menu {
+    background-color: #fe8e8e;
+    /* Màu nền của dropdown menu */
+    border: none;
+    /* Loại bỏ viền */
+    border-radius: 0;
+    /* Loại bỏ bo tròn */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    /* Hiển thị shadow */
+    transition: all 0.3s ease;
+    /* Hiệu ứng chuyển động */
+    padding-top: 0;
+    padding-bottom: 0;
+
+}
+
+.dropdown-menu a {
+    background-color: #eee4e0;
+    color: #000;
+    /* Màu chữ của các mục dropdown */
+    font-size: 16px;
+    /* Kích thước chữ của các mục dropdown */
+    padding: 10px 20px;
+    /* Khoảng cách giữa các mục */
+    text-decoration: none;
+    /* Loại bỏ gạch chân dưới */
+    display: block;
+    /* Hiển thị mỗi mục trên một dòng */
+    width: 100%;
+    height: 100%;
+    padding: 8px 12px;
+}
+
+.dropdown-menu li {
+    margin-right: 0;
+}
+
+.dropdown-menu a:hover {
+    background-color: #2d519e;
+    color: #fff;
+    /* Màu nền khi hover */
+}
+
+
+/* Hiển thị dropdown menu khi hover */
+
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #eee4e0;
+}
+
+
+/* Tạo viền dưới cho tab active */
+
+.navbar-nav .nav-item.active:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    position: absolute;
+    bottom: -3px;
+}
+
+
+/* Phần hiệu ứng nổi bật cho tab active */
+
+nav ul li a.active {
+    color: #636363;
+    /* Thay đổi màu chữ của tab nổi bật */
+    background-color: none;
+    /* Thay đổi màu nền xung quanh tab nổi bật */
+    border-radius: 5px;
+    /* Kích thước viền cong để tạo hiệu ứng nổi bật */
+    padding: 5px 10px;
+    /* Kích thước lề để tạo hiệu ứng nổi bật */
+}
+
+
+/* Hiệu ứng dưới tab active */
+
+nav ul li a.active::after {
+    position: absolute;
+    /* Đặt vị trí tuyệt đối cho phần tử */
+    bottom: -5px;
+    /* Cách bottom của phần tử cha 5px */
+    left: 50%;
+    /* Đặt vị trí ngang của phần tử tại giữa **/
+    transform: translateX(-50%);
+    /** Dịch chuyển phần tử ngang sang trái 50% của chính nó */
+    width: 20px;
+    /* Đặt chiều rộng của phần tử là 20px */
+    height: 10px;
+    /* Đặt chiều cao của phần tử là 5px **/
+    background-color: #eee4e0;
+    /* Đặt màu nền của phần tử */
+    border-radius: 5px;
+    /* Đặt bán kính bo tròn cho góc của phần tử */
+}
+
+
+/* Phần section */
+
+section {
+    padding: 20px;
+    /* Khoảng cách bên trong của phần section */
+}
+
+
+/* Phần footer */
+
+footer {
+    /* position: fixed; */
+    bottom: 0;
+    background-color: #6e5a51;
+    /* Màu nền của footer */
+    color: #fff;
+    /* Màu chữ trong footer */
+    text-align: center;
+    /* Căn giữa nội dung của footer */
+    padding: 10px;
+    /* Khoảng cách bên trong của footer */
+    /* position: absolute; */
+    /* Đặt footer ở vị trí tuyệt đối */
+    width: 100%;
+    /* Chiều rộng của footer */
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+footer h2 {
+    margin-top: 10px;
+}
+
+footer hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: #fff;
+}
+
+@media (min-width: 768px) {
+    .dropdown-menu {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        width: auto;
+    }
+    footer .col-md-4 {
+        text-align: left;
+    }
+}
+
+.cart-icon {
+    display: inline-block;
+    margin-right: 0;
+}
+
+.heavy {
+    font: normal 60px raleway;
+}
+
+footer {
+    font-size: 13px;
+}
+
+footer p {
+    padding: 0;
+}
+
+footer h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .click-here {
+    text-decoration: underline;
+    color: #ff7c41;
+}
+
+footer .brand {
+    text-decoration: none;
+}
+
+footer .number-phone {
+    font-family: Arial, Helvetica, sans-serif;
+}

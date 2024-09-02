@@ -1,0 +1,426 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.modal__overlay {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #bfb7b4;
+    opacity: 0.7;
+}
+
+.container-fluid-wrapper {
+    background-color: #eee4e0;
+}
+
+header {
+    background-color: #eee4e0;
+    padding: 10px;
+    /* Giảm khoảng cách bên trong của header */
+    width: 100%;
+    border-bottom: 1px solid #6e5a51;
+}
+
+
+/* Khoảng cách của logo */
+
+header img {
+    width: 250px;
+    /* Điều chỉnh chiều rộng của logo */
+    height: 250px;
+    /* Điều chỉnh chiều cao của logo */
+    margin: -10px;
+}
+
+/* Biểu tượng giỏ hàng */
+
+.cart-icon {
+    margin-right: 10px;
+    /* Khoảng cách giữa các tab */
+}
+
+.cart-icon li a {
+    color: #000000;
+    /* Màu sắc của biểu tượng */
+    text-decoration: none;
+}
+
+.cart-icon .fa-shopping-cart {
+    font-size: 30px;
+    /* Kích thước của biểu tượng Giỏ hàng */
+    color: #000000;
+    /* Màu của biểu tượng Giỏ hàng */
+}
+
+
+/* Phần thanh tìm kiếm */
+
+.search-container {
+    position: relative;
+}
+
+.search-container input[type="text"] {
+    padding: 4px 10px;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+}
+
+.custom-bg-color {
+    background-color: #eee4e0;
+}
+
+.search-container button[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 4px 10px;
+    border: #000000;
+    /* Thiếu kiểu border */
+    background-color: #6488d6;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* doi mau khi cham vao icon tk*/
+
+.search-container button[type="submit"]:hover {
+    background-color: #2d519e;
+    color: #fff;
+}
+
+
+
+.cart-icon {
+    margin-right: 10px;
+    /* Đặt lại khoảng cách của tab Giỏ hàng */
+}
+
+.cart-icon a {
+    color: #000000;
+    /* Màu sắc của biểu tượng */
+    text-decoration: none;
+}
+
+.cart-icon .fa-shopping-cart {
+    font-size: 24px;
+    /* Kích thước của biểu tượng Giỏ hàng */
+    color: #000000;
+    /* Màu của biểu tượng Giỏ hàng */
+}
+
+.nav-link-login {
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+header .cart-icon {
+    cursor: pointer;
+}
+
+
+/* Phần footer */
+
+footer {
+    font-size: 13px;
+    bottom: 0;
+    background-color: #6e5a51;
+    /* Màu nền của footer */
+    color: #fff;
+    /* Màu chữ trong footer */
+    text-align: center;
+    /* Căn giữa nội dung của footer */
+    padding: 10px;
+    /* Khoảng cách bên trong của footer */
+    /* Đặt footer ở vị trí tuyệt đối */
+    width: 100%;
+    /* Chiều rộng của footer */
+}
+
+footer p {
+    margin: 0;
+    padding: 5px;
+}
+
+footer h2 {
+    margin-top: 10px;
+}
+
+footer hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-color: #fff;
+}
+
+/* @media (min-width: 768px) {
+    .dropdown-menu {
+        position: relative;
+        top: auto;
+        left: auto;
+        right: auto;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        width: auto;
+    }
+    footer .col-md-4 {
+        text-align: left;
+    }
+} */
+
+.cart-icon {
+    display: inline-block;
+    margin-right: 0;
+}
+
+.heavy {
+    font: normal 60px Montserrat;
+}
+
+footer p {
+    padding: 0;
+}
+
+footer h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.brand {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .click-here {
+    text-decoration: underline;
+    color: #ff7c41;
+}
+
+footer .brand {
+    text-decoration: none;
+}
+
+.nav-link-login {
+    position: relative;
+}
+
+.nav-link-login:hover .list-info-login--appear {
+    display: block;
+}
+
+.list-info-login {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    width: 100px;
+    left: 14px;
+    bottom: -14px;
+    list-style: none;
+    padding: 0;
+}
+
+
+.logout {
+    padding: 0 8px;
+    width: 100%;
+    background-color: rgb(238, 228, 224);
+    position: relative;
+}
+
+.logout:hover {
+    background-color: #2d519e;
+    color: #fff;
+}
+
+.logout::after {
+    content: "";
+    width: 75%;
+    height: 12px;
+    background-color: none;
+    position: absolute;
+    display: block;
+    top: -5px;
+    left: 0;
+}
+
+.header__main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.header__navbar-toggler {
+    display: none;
+}
+
+.header__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__links a {
+    text-decoration: none;
+    color: #000;
+    margin: 10px;
+}
+
+.header__search-and-cart {
+    display: flex;
+}
+
+.search-container {
+    display: flex;
+    margin-right: 15px;
+}
+
+.product-link {
+    position: relative;
+}
+
+.dropdown-menu {
+    background-color: #fe8e8e;
+    border: none;
+    border-radius: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 150px;
+}
+
+.dropdown-menu .dropdown-item {
+    background-color: #eee4e0;
+    margin: 0;
+    padding: 8px 12px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #2d519e;
+    color: #fff;
+}
+
+.header__navbar-toggler {
+    display: block;
+}
+
+.header__navbar-toggler .header__links--hidden {
+    display: none;
+}
+
+.take_care--tablet {
+    display: none;
+}
+
+.footer_support {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.footer_support_child {
+    display: inline-block;
+}
+
+@media (max-width: 991px) {
+    .search-container input {
+        display: none;
+    }
+
+    .take_care {
+        display: none;
+    }
+
+    .take_care--tablet {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__main-content {
+        justify-content: flex-start;
+    }
+
+    .header__login-user {
+        margin-right: auto;
+        margin-left: 15px;
+    }
+
+    .header_links_main_content .header__links {
+        display: none;
+    }
+    
+    .header__navbar-toggler {
+        display: block;
+        position: relative;
+        margin-left: 20px;
+    }
+
+    .header__navbar-toggler .header__links-wrapper {
+        position: absolute;
+        top: 45px;
+        left: -24px;
+        border: none;
+        border-radius: 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+        transition: all 0.3s ease;
+        padding-top: 0;
+        padding-bottom: 0;
+        width: 200px;
+    }
+
+    .header__navbar-toggler .header__links {
+        display: block;
+    }
+
+    .header__navbar-toggler .header__links a{
+        display: block;
+        background-color: #eee4e0;
+        margin: 0;
+        padding: 8px 10px;
+    }
+
+    .header__navbar-toggler .header__links a:hover{
+        background-color: #2d519e;
+        color: #fff;
+    }
+
+
+
+}
+
+@media (min-width: 768px) {
+    .header__navbar-toggler {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer_support {
+        display: block;
+    }
+
+    .footer_contact {
+        margin: 15px 0;
+    }
+}

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/detail_cart.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Trang Chủ</title>
+</head>
+
+<body>
+    <div class="container-fluid container-fluid-wrapper">
+        <header class="container p-1 custom-bg-color">
+            <div class="text-center">
+                <img src="img/logo.png">
+            </div>
+    
+            <div class="navbar navbar-expand-xl">
+                <div class="header__main-content">
+                        <div class="header__navbar-toggler">
+                            <button style="margin-left: -23px;" class="navbar-toggler" type="button">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+    
+                            <div class="header__links-wrapper header__links--hidden">
+                                <div class="header__links" id="navbarNav">
+                                        <a href="trangchu.html">Trang chủ</a>
+                                
+                                        <div class="product-link">
+                                            <a class="nav-link dropdown-toggle product-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Sản phẩm
+                                            </a>
+                                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                                <li><a class="dropdown-item" href="#">Nam</a></li>
+                                                <li><a class="dropdown-item" href="#">Nữ</a></li>
+                                                <li><a class="dropdown-item" href="sanphampage1.html">Bộ sưu tập</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                        <a href="khuyenmai.html">Khuyến mãi</a>
+                                
+                                        <a href="cskh.html">Chăm sóc khách hàng</a>
+                                
+                                        <a href="lienhe.html">Liên hệ</a>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="header__login-user">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link nav-link-login">
+                                        <i class="fas fa-user-circle fa-lg"></i> 
+                                        <span class="nav-link-login-username">Login</span>
+                    
+                                        <ul class="list-info-login">
+                                            <li class="logout">
+                                                Đăng xuất
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="header_links_main_content">
+                            <div class="header__links">
+                                <a href="trangchu.html">Trang chủ</a>
+                            
+                                <div class="product-link">
+                                    <a class="nav-link dropdown-toggle product-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sản phẩm
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">Nam</a></li>
+                                        <li><a class="dropdown-item" href="#">Nữ</a></li>
+                                        <li><a class="dropdown-item" href="sanphampage1.html">Bộ sưu tập</a></li>
+                                    </ul>
+                                </div>
+                                
+                                <a href="khuyenmai.html">Khuyến mãi</a>
+                            
+                                <a class="take_care" href="cskh.html">Chăm sóc khách hàng</a>
+                                <a class="take_care--tablet" href="cskh.html">CSKH</a>
+                            
+                                <a href="lienhe.html">Liên hệ</a>
+                            </div>
+                        </div class="header_links_main_content">
+                    
+                        <div class="header__search-and-cart">
+                            <div class="search-container">
+                                <input type="text" placeholder="Tìm kiếm...">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                            </div>
+                                
+                            <div class="nav-link cart-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="30px" height="30px" viewBox="5.7 0 105.5 126.1" preserveAspectRatio="xMinYMax meet" data-hook="svg-icon-1">
+                                    <path fill="#a6858d" d="M99.8 28.4c0-1.2-0.9-2-2.1-2h-15c0 3.2 0 7.6 0 8.2 0 1.5-1.2 2.6-2.6 2.9 -1.5 0.3-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.9 0-4.7 0-8.2H40.1c0 3.2 0 7.3 0 8.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-0.6 0-5 0-8.2h-15c-1.2 0-2 0.9-2 2L8.3 124c0 1.2 0.9 2.1 2.1 2.1h96.3c1.2 0 2.1-0.9 2.1-2.1L99.8 28.4z"></path>
+                                    <path fill="#a6858d" d="M59.1 5.9c-2.9 0-2 0-2.9 0 -2 0-4.4 0.6-6.4 1.5 -3.2 1.5-5.9 4.1-7.6 7.3 -0.9 1.8-1.5 3.5-1.8 5.6 0 0.9-0.3 1.5-0.3 2.3 0 1.2 0 2.1 0 3.2 0 1.5-1.2 2.9-2.6 2.9 -1.5 0-2.9-0.9-3.2-2.3 0-0.3 0-0.3 0-0.6 0-1.2 0-2.3 0-3.5 0-3.2 0.9-6.4 2-9.4 1.2-2.3 2.6-4.7 4.7-6.4 3.2-2.9 6.7-5 11.1-5.9C53.5 0.3 55 0 56.7 0c1.5 0 2.9 0 4.4 0 2.9 0 5.6 0.6 7.9 1.8 2.6 1.2 5 2.6 6.7 4.4 3.2 3.2 5.3 6.7 6.4 11.1 0.3 1.5 0.6 3.2 0.6 4.7 0 1.2 0 2.3 0 3.2 0 1.5-1.2 2.6-2.6 2.9s-2.9-0.9-3.2-2.3c0-0.3 0-0.3 0-0.6 0-1.2 0-2.6 0-3.8 0-2.3-0.6-4.4-1.8-6.4 -1.5-3.2-4.1-5.9-7.3-7.3 -1.8-0.9-3.5-1.8-5.9-1.8C61.1 5.9 59.1 5.9 59.1 5.9L59.1 5.9z"></path>
+                                    <text fill="#fff" x="58.5" y="77" dy=".35em" text-anchor="middle" class="uxskpx heavy" data-hook="items-count">0</text>
+                                </svg>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </header>
+        <!-- Cart-modal -->
+        <div class="modal modal-cart--hidden">
+            <div class="modal__overlay"></div>
+    
+            <div class="modal__body">
+                <div class="cart">
+                    <div class="cart__heading">
+                        <div class="cart__heading-arrow" title="Đóng giỏ hàng">
+                            <i class="fa-solid fa-angle-right cart__heading-icon"></i>
+                        </div>
+        
+                        <span class="cart__heading-title">Giỏ Hàng</span>
+                    </div>
+        
+                    <div class="cart__content">
+                        <ul class="cart__list-product"></ul>
+        
+                        <div class="cart__sub-total">
+                            <div class="cart__sub-total-title">Tổng tiền</div>
+                            <div class="cart__sub-total-number">0</div>
+                        </div>
+                        
+                        <div class="cart-empty-img cart-empty-img--hidden">
+                            <img src="img/Cart_empty.png" >
+                        </div>
+                        
+                    </div>
+        
+                    <div class="cart__footer">
+                        <a href="detail_cart.html" class="cart__footer-link-btn">
+                            <button class="cart__footer-btn">Xem giỏ hàng</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Sign-up-modal -->
+        <div class="modal modal-sign-up--hidden">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <div class="container container-signup">
+                    <div class="row d-flex justify-content-center align-items-center wrapper-signup">
+                        <div class="col-lg-7 wrapper-form-container">
+                            <div class="exit-sign-up-icon">
+                                <i class="fa-solid fa-x"></i>
+                            </div>
+    
+                            <div class="form-container">
+                                <h3 class="title">ĐĂNG KÝ</h3>
+                                <form class="form-horizontal" id="form-1" method="POST" novalidate>
+                                    <div class="group-2">
+                                        <div class="form-group">
+                                            <label>*Tên đăng nhập</label>
+                                            <input id="username" name="username" type="text" class="form-control" placeholder="Nhập tên đăng nhập">
+                                            <span class="form-message"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Email</label>
+                                            <input id="email" name="email" type="email" class="form-control" placeholder="Nhập email">
+                                            <span class="form-message"></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="group-2">
+                                        <div class="form-group">
+                                            <label>*Mật khẩu</label>
+                                            <input id="password" name="password"  type="password" class="form-control" placeholder="Nhập mật khẩu">
+                                            <span class="form-message"></span>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>*Nhập lại mật khẩu</label>
+                                            <input id="password_confirm" name="password_confirm" type="password" class="form-control" placeholder="Nhập lại mật khẩu">
+                                            <span class="form-message"></span>
+                                        </div>
+                                    </div>
+                
+                                    <div class="group-2">
+                                        <div class="form-group form-group-number-phone">
+                                            <label>*Số điện thoại</label>
+                                            <input id="number_phone" name="number_phone" type="text" class="form-control" placeholder="Nhập số điện thoại">
+                                            <span class="form-message"></span>
+                                        </div>
+                                        
+                                        <div class="form-group form-group-city">
+                                            <label>*Thành phố</label>
+                                            <div>
+                                                <select class="form-select form-select-sm form-control" id="city" name="code_city" aria-label=".form-select-sm">
+                                                    <option value="" selected id="default-city">Chọn tỉnh thành</option>           
+                                                </select>
+                                                <span class="form-message"></span>
+                                            </div> 
+                                        </div>
+                                    </div>
+                
+                                    <div class="form-footer">
+                                        <div class="suggest-signin">    
+                                            <div class="signin-link">Bạn đã có tài khoản?</div>
+                                            <div class="signin-link"> Nhấn vào đây để <a>Đăng nhập</a></div>
+                                        </div>
+                    
+                                        <button class="btn signup">ĐĂNG KÝ</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    
+        <!-- Login-modal -->
+        <div class="modal modal-login--hidden">
+            <div class="modal__overlay"></div>
+            <div class="modal__body">
+                <div class="wrapper-login">
+                    <div class="container-fluid container-login">
+                        <div class="row main-content text-center login">
+                            <div class="col-lg-4 text-center shop__info">
+                                <img src="img/login.jpg" alt="" class="login-img">
+                            </div>
+                            <div class="col-lg-8 login__form">
+                                <div class="container-fluid">
+                                    <div class="row mt-3">
+                                        <div class="control-login">
+                                            <h2 class="login-title">ĐĂNG NHẬP</h2>
+                                            <div class="exit-login-icon">
+                                                <i class="fa-solid fa-x"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <form id="form-2" method="POST" novalidate>
+                                            <div class="input-user-name form-group">
+                                                <input type="text" name="username" id="username-login" class="form__input" placeholder="Tên đăng nhập">
+                                                <span class="form-message-login"></span>
+                                            </div>
+                
+                                            <div class="input-password form-group">
+                                                <input type="password" name="password" id="password-login" class="form__input" placeholder="Mật khẩu">
+                                                <span class="form-message-login"></span>
+                                            </div>
+                
+                                            <div class="login-btn">
+                                                <input type="submit" value="Đăng nhập" class="btn-submit-login">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="row">
+                                        <p>Bạn chưa có tài khoản? <a class="link-singup">Đăng ký</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+
+    <main class="main_detail">
+        <div class="row" style="background-color: #eee4e0; padding-bottom: 20px; padding-top: 30px;">
+            <h1 class="container" style="font-family: 'Inter'; text-align: center; margin-top: -10px;">CHĂM SÓC KHÁCH
+                HÀNG</h1>
+            <div class="content-page">
+                <p style="text-align: center;"><span>Chúng tôi hy vọng bạn thích những gì bạn đặt ! Tuy nhiên, trong
+                        trường hợp bạn không hài lòng 100%, UNI® đã có quy trình đổi trả dưới đây:</span></p>
+                <h3 style="margin-left: 20px;">Chính sách đổi hàng</h3>
+                <p style="margin-left: 20px;">
+                    <br>
+                    <span style="font-size: 16px;">
+                        <strong>1. Điều kiện đổi trả hàng</strong>
+                    </span>
+                </p>
+                <p style="margin-left: 20px;">– Áp dụng với tất cả sản phẩm (chỉ ngoại trừ boxer, vớ): chưa qua sử dụng và còn tem mác như ban đầu
+                    được đính kèm.</p>
+                <p style="margin-left: 20px;">– Áp dụng đổi hàng trong trường hợp giao nhầm, thiếu sản phẩm trong đơn hàng
+                    <br>
+                    <span style="color: rgb(200, 48, 48);">(Trường hợp thiếu hoặc nhầm sản phẩm, bạn vui lòng hỗ trợ
+                        Video Unbox sản phẩm & gửi cho chúng mình nhé)</span>
+                    <br>
+                    <br>
+                    – Áp dụng đổi hàng trong trường hợp lỗi sản phẩm từ nhà sản xuất.
+                    <br>
+                    <br>
+                    – Áp dụng 01 lần đổi/ 01 đơn hàng.
+                    <br>
+
+
+
+                </p>
+                <p style="margin-left: 20px;">
+                    – Với trường hợp sản phẩm bị cắt nhãn mác, trong vòng 1 ngày kể từ ngày nhận bưu phẩm, bạn hãy gửi
+                    phản hồi<br>
+                    về chúng mình để được giải quyết. Qua mốc thời gian 1 ngày chúng mình sẽ không giải quyết đơn đổi
+                    trả.
+                </p>
+
+                <p style="margin-left: 20px;">– Sản phẩm đổi phải có giá trị tương đương hoặc cao hơn sản phẩm được đổi. Vui lòng thanh toán chi
+                    phí chênh lệch giá trị sản phẩm nếu có.</p>
+
+                <p style="margin-left: 20px;">– Áp dụng với các đơn hàng trên toàn hệ thống của UNI® (Website & Cửa hàng).</p>
+
+                <p style="margin-left: 20px;">
+                    <em>
+                        <strong>
+                            <span style="font-size: 16px;">
+                                <span style="color: red;">**</span>
+                            </span>Lưu ý
+                        </strong>
+                    </em>
+                    <br>
+                    – Bạn vui lòng gửi cho chúng mình xin Clip đóng gói đơn hàng đổi trả của bạn, nhân viên tư vấn sẽ
+                    <br>
+                    xác nhận và tiến hành lên đơn đổi trả cho bạn.
+
+                    <br>
+                    Tham khảo cách thức quay video đóng / mở gói hàng
+                    <strong>
+                        <a href="#">
+                            <span style="color: #006633;">TẠI ĐÂY</span>
+                        </a>
+                    </strong>
+                </p>
+
+                <p style="margin-left: 20px;"><em>
+                        <strong>
+                            <span style="font-size: 16px;">
+                                <span style="color: red;">**</span>
+                            </span>Lưu ý
+                        </strong>
+                        SICKO® có quyền quyết định dừng việc hỗ trợ đổi trả lại cho khách hàng nếu phát hiện khách hàng
+                        sử dụng chính sách để trục lợi.
+                    </em>
+                </p>
+                <p style="margin-left: 20px;">
+                    <br>
+                    <span style="font-size: 16px;">
+                        <strong>2. Dịch vụ đổi hàng tận nơi</strong>
+                    </span>
+                </p>
+                <p style="margin-left: 20px;">– Nhận biết được sự bất tiện khi cần đổi sản phẩm do không vừa là một khó khăn, khi bạn phải mang
+                    hàng<br>
+                    ra bưu cục và chờ đợi một thời gian để nhận lại món đồ ưng ý của mình.</p>
+                <p style="margin-left: 20px;">– Nhằm mang lại cho bạn sự tiện lợi và những trải nghiệm tuyệt vời khi mua hàng, tụi mình đã phát
+                    triển <br>
+                    dịch vụ đổi hàng tận nơi:</p>
+                <p style="margin-left: 20px;">– Đổi hàng tận nơi, đội ngũ giao - nhận hàng sẽ đến tận nhà để đổi hàng cho bạn.</p>
+                <p style="margin-left: 20px;">– Áp dụng 01 lần đổi/ 01 đơn hàng.</p>
+                <p style="margin-left: 20px;">– Áp dụng đổi hàng với tất cả các sản phẩm, thời gian đổi hàng trong vòng 7 ngày với áo quần, 30 ngày
+                    với <br>
+                    phụ kiện kể từ ngày bạn nhận bưu phẩm.</p>
+                <p style="margin-left: 20px;">– Chi phí vận chuyển khi đổi hàng được UNI® hỗ trợ 1 chiều cho bạn (bạn chỉ cần thanh toán phí giao
+                    hàng<br>
+                    khi nhận sản phẩm đúng) và 2 chiều đối với sản phẩm do lỗi sản xuất.</p>
+                <p style="margin-left: 20px;">
+                    <u>
+                        <em>
+                            <strong>
+                                Lưu ý: Không áp dụng với sản phẩm khuyến mãi
+                            </strong>
+                        </em>
+                    </u>
+                </p>
+                <p style="margin-left: 20px;"><br>
+                    <span style="font-size: 16px;">
+                        <strong>3. Chi phí vận chuyển</strong>
+                    </span>
+                </p>
+                <p style="margin-left: 20px;">
+                    <strong>* Chi phí vận chuyển khi đổi hàng được UNI® hỗ trợ:</strong>
+                    <br>
+                    – 1 chiều cho bạn đối với trường hợp bạn muốn đổi sang size khác theo mong muốn (lỗi không phải do
+                    nhà sản xuất).
+                    <br>
+                    – 2 chiều đối với sản phẩm do lỗi sản xuất, giao nhầm (lỗi do nhà sản xuất).
+                </p>
+                <p style="margin-left: 20px;">
+                    <strong>* Chi phí vận chuyển không được UNI® hỗ trợ:</strong><br>
+                    – Với sản phẩm trong chương trình khuyến mãi, nếu bạn muốn đổi sang sản phẩm khác phải tự chi trả
+                    chi phí vận chuyển.
+                </p>
+                <p style="margin-left: 20px;"><span style="font-size: 16px;">
+                        <strong>4. Quy trình đổi hàng</strong>
+                        – Nhắn tin cho các kênh Mạng xã hội hoặc Shopee, Lazada hoặc Đường dây tiếp nhận phản hồi chính
+                        thức của UNI® cung <br>
+                        cấp thông tin địa chỉ của bạn: Họ tên, số điện thoại, địa chỉ và video mở gói hàng hoặc làm theo
+                        hướng dẫn dưới đây:
+                        <br>
+                        Bước 1:
+                        <strong>
+                            <a href="#"><span style="color:#006600">ĐĂNG NHẬP TÀI KHOẢN BẰNG SỐ ĐIỆN THOẠI ĐÃ ĐẶT
+                                    HÀNG</span> </a>
+                        </strong>
+                        <br>
+                        Bước 2: Tại mục
+                        <strong>
+                            <a href="#"><span style="color:#006600">tất cả đơn hàng</span> </a>
+                        </strong>
+                        => Chọn sản phẩm cần <strong>
+                            <a href="#"><span style="color:#006600">đổi trả</span> </a>
+                        </strong>
+                        Điền thông tin lý do đổi trả & cung cấp video đóng gói sản phẩm.
+                        <br>
+                        Bước 3: Nhận cuộc gọi xác nhận từ UNI® qua số hotline
+                        <strong><a href="#">0123 123 123</a></strong>
+                        về sản phẩm và thời gian nhận hàng. Ngay khi xác nhận chúng mình sẽ gởi bạn đơn hàng mới.
+                    </span></p>
+                <h3 style="margin-left: 20px;">Chính sách bảo hành</h3>
+                <p style="margin-left: 20px;">
+                    <br>
+                    <span style="font-size: 16px;">
+                        <strong>1. Đối tượng & thời gian áp dụng</strong>
+                    </span>
+                </p>
+                <p style="margin-left: 20px;"> – Đối với sản phẩm áo, quần: Trong 14 ngày, từ ngày mua hàng theo thời gian ghi trên hoá đơn với các trường hợp bung chỉ, bung nút, kỹ thuật may,<br> giãn cổ áo, quần… và các trường hợp khác mà UNI có khả năng sửa chữa được.</p>
+                <p style="margin-left: 20px;">– Đối với sản phẩm phụ kiện: Trong 30 ngày, từ ngày mua hàng theo thời gian ghi trên hoá đơn với trường hợp bung đường chỉ, bung quai đeo, hư khoá <br>kéo và tất cả những lỗi kỹ thuật do nhà sản xuất.</p>
+                <p style="margin-left: 20px;">– Chúng mình không bảo hành hình in cho tất cả sản phẩm, bạn có thể xem : Hướng dẫn bảo quản /vệ sinh sản phẩm in ấn <strong>
+                    <a href="#"><span style="color:#006600">Ở đây</span> </a>
+                </strong></p>
+                <p style="margin-left: 20px;">=> Trong quá trình sử dụng sản phẩm, mọi thắc mắc vui lòng liên hệ Các trang mạng xã hội của UNI(Facebook, Instagram, TikTok) hoặc<br> đường dây tiếp nhận phản hồi <strong><a href="#">0123 123 123</a></strong>để được tụi mình hỗ trợ nhanh chóng.</p>
+                <p style="margin-left: 20px;"><br>
+                    <span style="font-size: 16px;">
+                        <strong>2. Thời gian bảo hành</strong>
+                    </span></p>
+                <p style="margin-left: 20px;">Trong 07-20 ngày tuỳ vào tình trạng sản phẩm sau khi nhận được hàng từ bạn.
+                </p>
+                <p style="margin-left: 20px;">
+                    <br>
+                    <span style="font-size: 16px;">
+                    <strong>3. Trường hợp không hỗ trợ bảo hành </strong>
+                </span></p></p>
+                <p style="margin-left: 20px;"> – Lỗi do sử dụng không đúng cách như: sử dụng quá tải so với sức chứa, chịu lực, kích cỡ của sản phẩm, làm cho sản phẩm thay đổi quá nhiều so với hình dạng ban đầu</p>
+                <p style="margin-left: 20px;">– Lỗi do bảo quản không đúng quy cách như: sử dụng chất tẩy rửa mạnh để giặt và gây lem màu, phơi nắng quá lâu làm hư hại sản phẩm…
+
+                </p>
+                <p style="margin-left: 20px;">– Lỗi do bảo quản không đúng quy cách như: sử dụng chất tẩy rửa mạnh để giặt và gây lem màu, phơi nắng quá lâu làm hư hại sản phẩm…
+
+                </p>
+                <p style="margin-left: 20px;">– Sản phẩm đã qua sử dụng bị dơ bẩn, đã được sửa chữa bởi người sử dụng.
+
+                </p>
+                <p style="margin-left: 20px;">– Sản phẩm đã quá hạn bảo hành.
+
+                </p>
+
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-md-start text-sm-start text-start">
+                    <h3>VỀ CHÚNG TÔI</h3>
+                    <a href="#" class="click-here brand">UNI</a>
+                    <br>
+                    <p>Đừng lo lắng, chúng tôi là Uni</p>
+                </div>
+
+                <div class="col-md-4 text-md-center text-sm-start text-start footer_contact">
+                    <h3>LIÊN HỆ</h3>
+                    <p>Điện thoại: <span class="number-phone">0123 003 006</span></p>
+                    <p>Chăm sóc khách hàng: unilshop@gmail.com</p>
+                    <p>Liên hệ công việc: business@unil.vn</p>
+                </div>
+
+                <div class="col-md-4 footer_support text-md-start text-sm-start text-start">
+                    <div class="footer_support_child">
+                        <h3>HỖ TRỢ</h3>
+                        <p>Tài Khoản: <a href="#" class="click-here">https://unil.vn/</a></p>
+                        <p href="#">Chính sách đổi trả <a href="#" class="click-here">Tại đây</a></p>
+                        <p href="#">Chính sách bảo mật <a href="#" class="click-here">Tại đây</a></p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>© Bản quyền thuộc về UNI</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/header.js"></script>
+    <script src="js/database.js"></script>
+    <script src="js/form_validator.js"></script>
+    <script src="js/singup.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
